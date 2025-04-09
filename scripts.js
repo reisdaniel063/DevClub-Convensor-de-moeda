@@ -1,6 +1,6 @@
 const convertButton = document.querySelector(".convert-button");
 const currencySelect = document.querySelector(".currency-select");
-const inputCurrencyValue = document.querySelector(".input-currency"); // Moveu para fora da função para evitar repetição
+const inputCurrencyValue = document.querySelector(".input-currency"); 
 const currencyValueToConvert = document.querySelector(".currency-value-to-convert");
 const currencyValueConverted = document.querySelector(".currency-value");
 
@@ -10,7 +10,7 @@ const libraToday = 7.9;
 const bitcoinToday = 76434.0
 
 function convertValue() {
-  const inputValue = parseFloat(inputCurrencyValue.value); // Converte para número para realizar a divisão
+  const inputValue = parseFloat(inputCurrencyValue.value); 
 
 
   if (currencySelect.value == "dolar") {
@@ -64,5 +64,3 @@ function changeCurrency() {
 
 currencySelect.addEventListener("change", changeCurrency);
 convertButton.addEventListener("click", convertValue);
-
-// Remova a chamada imediata de convertValue() aqui
